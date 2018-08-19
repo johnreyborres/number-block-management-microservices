@@ -12,12 +12,12 @@ This microservice will focus mainly on the tracking of numbers. Tracking include
 The logical design containing the abstract representation of the data is described in the schema design below.
 
 **Numbers**
-| Field        	| Data Type     | Description  			|
-| ------------- |-------------| ---------------------|
-| id      		| int 			| Primary key 			|
-| number      	| varchar       | The number 			|
-| created_at 	| datetime      | Created at timestamp 	|
-| updated_at 	| datetime      | Updated at timestamp 	|
+| Field | Data Type | Description |
+| --- |--- |--- |
+| id | int | Primary key |
+| number | varchar | The number |
+| created_at | datetime | Created at timestamp |
+| updated_at | datetime | Updated at timestamp |
 
 **Numbers History**
 | Field        	    | Data Type     | Description  			|
