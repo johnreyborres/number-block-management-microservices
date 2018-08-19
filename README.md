@@ -12,6 +12,7 @@ This microservice will focus mainly on the tracking of numbers. Tracking include
 The logical design containing the abstract representation of the data is described in the schema design below.
 
 **Numbers**
+
 | Field | Data Type | Description |
 | --- |--- |--- |
 | id | int | Primary key |
@@ -20,33 +21,36 @@ The logical design containing the abstract representation of the data is describ
 | updated_at | datetime | Updated at timestamp |
 
 **Numbers History**
-| Field        	    | Data Type     | Description  			|
-| -------------     |-------------  | ----------------------|
-| id      		    | int 			| Primary key |
-| number_id      	| int           | Foreign key of numbers table |
-| number_status_id  | int           | Foreign key of number status table |
-| is_current      	| boolean       | The indicator of the current status |
-| updated_by_id     | int           | Foreign key of user who does the update |
-| remarks      	    | varchar       | Remarks of status change |
-| created_at 	    | datetime      | Created at timestamp |
-| updated_at 	    | datetime      | Updated at timestamp |
+
+| Field | Data Type | Description |
+| --- |--- | --- |
+| id | int | Primary key |
+| number_id | int | Foreign key of numbers table |
+| number_status_id | int | Foreign key of number status table |
+| is_current | boolean | The indicator of the current status |
+| updated_by_id | int | Foreign key of user who does the update |
+| remarks | varchar | Remarks of status change |
+| created_at | datetime | Created at timestamp |
+| updated_at | datetime | Updated at timestamp |
 
 **Number Statuses**
-| Field        	    | Data Type     | Description  			|
-| -------------     |-------------  | ----------------------|
-| id      		    | int 			| Primary key |
-| status_name      	| varchar       | The name of the status |
-| status_desc       | varchar       | The description of the status |
-| created_at 	    | datetime      | Created at timestamp |
-| updated_at 	    | datetime      | Updated at timestamp |
+
+| Field | Data Type | Description |
+| --- |--- | --- |
+| id | int | Primary key |
+| status_name | varchar | The name of the status |
+| status_desc | varchar | The description of the status |
+| created_at | datetime | Created at timestamp |
+| updated_at | datetime | Updated at timestamp |
 
 **Users**
-| Field        	    | Data Type     | Description  			|
-| -------------     |-------------  | ----------------------|
-| id      		    | int 			| Primary key |
-| name      	    | varchar       | The name of the user |
-| created_at 	    | datetime      | Created at timestamp |
-| updated_at 	    | datetime      | Updated at timestamp |
+
+| Field | Data Type | Description |
+| --- |--- | --- |
+| id | int | Primary key |
+| name | varchar | The name of the user |
+| created_at | datetime | Created at timestamp |
+| updated_at | datetime | Updated at timestamp |
 
 # Architectural design
 The design of the system architecture is described  [here](https://drive.google.com/file/d/1E_vmjDyL6uIqivGpAwShZ4FOLiI_3QUy/view?usp=sharing). It leverages the use of Amazon Web Services.
