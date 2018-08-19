@@ -2,16 +2,16 @@
 This is a detailed design for a microservice which does number block management from a telco perspective.
 
 # Microservices
-##### Numbers microservice
+### Numbers microservice
 This microservice will focus mainly on the management of numbers. The telco operator will manage the creation and updates of the numbers data.
         
-##### Tracking microservice
+### Tracking microservice
 This microservice will focus mainly on the tracking of numbers. Tracking includes the current status of the number and the history of statuses on the lifecyle of the numbers.
         
 # Logical design
 The logical design containing the abstract representation of the data is described in the schema design below.
 
-**Numbers**
+#### Numbers
 
 | Field | Data Type | Description |
 | --- |--- |--- |
@@ -20,7 +20,7 @@ The logical design containing the abstract representation of the data is describ
 | created_at | datetime | Created at timestamp |
 | updated_at | datetime | Updated at timestamp |
 
-**Numbers History**
+#### Numbers History
 
 | Field | Data Type | Description |
 | --- |--- | --- |
@@ -33,7 +33,7 @@ The logical design containing the abstract representation of the data is describ
 | created_at | datetime | Created at timestamp |
 | updated_at | datetime | Updated at timestamp |
 
-**Number Statuses**
+#### Number Statuses
 
 | Field | Data Type | Description |
 | --- |--- | --- |
@@ -43,7 +43,7 @@ The logical design containing the abstract representation of the data is describ
 | created_at | datetime | Created at timestamp |
 | updated_at | datetime | Updated at timestamp |
 
-**Users**
+#### Users
 
 | Field | Data Type | Description |
 | --- |--- | --- |
