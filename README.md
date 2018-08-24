@@ -52,8 +52,8 @@ The logical design containing the abstract representation of the data is describ
 | created_at | datetime | Created at timestamp |
 | updated_at | datetime | Updated at timestamp |
 
-# Architectural design
-The design of the system architecture is described  [here](https://drive.google.com/file/d/1E_vmjDyL6uIqivGpAwShZ4FOLiI_3QUy/view?usp=sharing). It leverages the use of Amazon Web Services.
+# Architectural design and scability
+The design of the system architecture is described  [here](https://drive.google.com/file/d/1E_vmjDyL6uIqivGpAwShZ4FOLiI_3QUy/view?usp=sharing). This design caters the horizontal scaling of the microservices architecture. It leverages the use of Amazon Web Services.
 
-# Communication Protocol
+# Communication protocol/ Type of API exposed
 The HTTP/S protocol is the most popular way to implement synchronous communication between microservices. For this, RESTful APIs will be the type of API to be exposed to consuming applications using the HTTP as a transport layer. The REST architectural style relies on stateless communication, uniform interfaces, and standard methods.
